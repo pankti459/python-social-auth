@@ -43,7 +43,7 @@ class BaseLinkedinAuth(object):
                                         else self.strategy.get_language()
             }
 
-/*
+'''
 class LinkedinOAuth(BaseLinkedinAuth, BaseOAuth1):
     """Linkedin OAuth authentication backend"""
     name = 'linkedin'
@@ -69,7 +69,7 @@ class LinkedinOAuth(BaseLinkedinAuth, BaseOAuth1):
         return self.request(self.REQUEST_TOKEN_URL + scope,
                             params=self.request_token_extra_arguments(),
                             auth=self.oauth_auth()).text
-*/
+'''
 
 class LinkedinOAuth2(BaseLinkedinAuth, BaseOAuth2):
     name = 'linkedin-oauth2'
